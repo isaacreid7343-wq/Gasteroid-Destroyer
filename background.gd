@@ -8,7 +8,7 @@ func _process(delta: float) -> void:
 		stretches += 1
 		position.x = 1553
 		print(stretches)
-		if stretches >= 1 && get_parent().points >= 0:
+		if stretches >= INF && get_parent().points >= INF:
 			get_parent().bossBattle()
 
 func boomSound():
