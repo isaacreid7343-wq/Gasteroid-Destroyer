@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://cixx3sgi57cwt"]
+
+[ext_resource type="Script" uid="uid://bmwcr005ycxav" path="res://game_arena.gd" id="1_vo5ts"]
+[ext_resource type="PackedScene" uid="uid://b2m71lxbmfq1q" path="res://Asteroid.tscn" id="2_twers"]
+[ext_resource type="PackedScene" uid="uid://3bmani0uu35m" path="res://satellite.tscn" id="3_4ifhc"]
+[ext_resource type="PackedScene" uid="uid://lc1tbvomseb1" path="res://broken_satellite.tscn" id="4_tkan5"]
+[ext_resource type="PackedScene" uid="uid://etom1edy2il8" path="res://moon_rock.tscn" id="5_8mpgn"]
+[ext_resource type="PackedScene" uid="uid://bbbyvcx02a22v" path="res://the_roaring_knight_boss.tscn" id="6_vo5ts"]
+[ext_resource type="Texture2D" uid="uid://bjakqir7wphp8" path="res://Assets/pixil-frame-0 (8).png" id="7_pmdf5"]
+[ext_resource type="Script" uid="uid://chldoo0wih4x4" path="res://background.gd" id="8_hfa6h"]
+[ext_resource type="Script" uid="uid://ctddouvvky8au" path="res://Player.gd" id="9_k8014"]
+[ext_resource type="PackedScene" uid="uid://7l58r2jblbae" path="res://Bullet.tscn" id="10_8atkb"]
+[ext_resource type="Texture2D" uid="uid://dwoh4e387hjtg" path="res://Assets/pixil-frame-0 (10).png" id="11_7pd1o"]
+[ext_resource type="AudioStream" uid="uid://bhqfevpu21bee" path="res://Assets/Sounds/deltarune-explosion-sound-effect.mp3" id="11_twers"]
+[ext_resource type="Texture2D" uid="uid://beaq1hnpv20jl" path="res://Assets/pixil-frame-0 (9).png" id="12_ydyo8"]
+[ext_resource type="Texture2D" uid="uid://cae0rpkq13sma" path="res://Assets/pixil-frame-0 (7).png" id="13_vo5ts"]
+[ext_resource type="Texture2D" uid="uid://j4mnt2rbru5i" path="res://Assets/pixil-frame-0 (5).png" id="14_vo5ts"]
+[ext_resource type="AudioStream" uid="uid://beqi1n7vjrauq" path="res://Assets/Sounds/spamton_neo_mix_ex_wip.ogg" id="15_4ifhc"]
+[ext_resource type="Texture2D" uid="uid://7trbjdcn0v80" path="res://Assets/pixil-frame-0 (4).png" id="15_twers"]
+[ext_resource type="FontFile" uid="uid://ddykhpydupbc6" path="res://Assets/Fonts/Minecraft.ttf" id="16_qcpok"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0hol4"]
+radius = 44.0
+height = 106.0
+
+[node name="Game Area" type="Node2D" unique_id=123038198]
+position = Vector2(0, 2)
+script = ExtResource("1_vo5ts")
+asteroidScene = ExtResource("2_twers")
+satelliteScene = ExtResource("3_4ifhc")
+brokenSatelliteScene = ExtResource("4_tkan5")
+moonRockScene = ExtResource("5_8mpgn")
+bossSceneNo1 = ExtResource("6_vo5ts")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1342693481]
+texture_filter = 1
+position = Vector2(1553, 320.99997)
+scale = Vector2(10.124999, 10.124999)
+texture = ExtResource("7_pmdf5")
+script = ExtResource("8_hfa6h")
+
+[node name="BoomSound" type="AudioStreamPlayer" parent="Background" unique_id=265142372]
+stream = ExtResource("11_twers")
+volume_db = -80.0
+
+[node name="Player" type="Node2D" parent="." unique_id=1148990179]
+position = Vector2(211, 300)
+script = ExtResource("9_k8014")
+bulletScene = ExtResource("10_8atkb")
+
+[node name="Player Full Health" type="Sprite2D" parent="Player" unique_id=1588637638]
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = ExtResource("13_vo5ts")
+
+[node name="Player 2 Health" type="Sprite2D" parent="Player" unique_id=1935771771]
+visible = false
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = ExtResource("12_ydyo8")
+
+[node name="Player 1 Health" type="Sprite2D" parent="Player" unique_id=1618459442]
+visible = false
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = ExtResource("11_7pd1o")
+
+[node name="Player" type="Area2D" parent="Player" unique_id=1064565964]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Player" unique_id=1268731679]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_0hol4")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1998053375]
+position = Vector2(574, 322)
+
+[node name="SpamtonNeoSong" type="AudioStreamPlayer" parent="." unique_id=2093736267]
+stream = ExtResource("15_4ifhc")
+volume_db = -80.0
+autoplay = true
+
+[node name="Timer" type="Timer" parent="." unique_id=1729807485]
+wait_time = 1.5
+autostart = true
+
+[node name="Empty Heart 1" type="Sprite2D" parent="." unique_id=807363396]
+texture_filter = 1
+position = Vector2(25, 27)
+scale = Vector2(10, 10)
+texture = ExtResource("14_vo5ts")
+
+[node name="Empty Heart 2" type="Sprite2D" parent="." unique_id=18659572]
+texture_filter = 1
+position = Vector2(65, 27)
+scale = Vector2(10, 10)
+texture = ExtResource("14_vo5ts")
+
+[node name="Empty Heart 3" type="Sprite2D" parent="." unique_id=727876615]
+texture_filter = 1
+position = Vector2(105, 27)
+scale = Vector2(10, 10)
+texture = ExtResource("14_vo5ts")
+
+[node name="Full Heart 1" type="Sprite2D" parent="." unique_id=612284739]
+texture_filter = 1
+position = Vector2(25, 27)
+scale = Vector2(10, 10)
+texture = ExtResource("15_twers")
+
+[node name="Full Heart 2" type="Sprite2D" parent="." unique_id=820196065]
+texture_filter = 1
+position = Vector2(65, 27)
+scale = Vector2(10, 10)
+texture = ExtResource("15_twers")
+
+[node name="Full Heart 3" type="Sprite2D" parent="." unique_id=964253862]
+texture_filter = 1
+position = Vector2(105, 27)
+scale = Vector2(10, 10)
+texture = ExtResource("15_twers")
+
+[node name="Point Counter" type="Label" parent="." unique_id=1987618221]
+offset_left = 1036.0
+offset_top = 3.0
+offset_right = 1145.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("16_qcpok")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 2
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

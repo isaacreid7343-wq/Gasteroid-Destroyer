@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://3bmani0uu35m"]
+
+[ext_resource type="Script" uid="uid://d4fo6h74okhww" path="res://satellite.gd" id="1_u2kwt"]
+[ext_resource type="Texture2D" uid="uid://dra584764xpcv" path="res://Assets/pixil-frame-0 (11).png" id="2_47pra"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_47pra"]
+radius = 50.69501
+height = 162.96904
+
+[node name="Satellite" type="Area2D" unique_id=1946437038]
+script = ExtResource("1_u2kwt")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1273082827]
+texture_filter = 1
+position = Vector2(-1.9999999, 0.99999994)
+scale = Vector2(5, 5)
+texture = ExtResource("2_47pra")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1783420117]
+rotation = 1.3089969
+shape = SubResource("CapsuleShape2D_47pra")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://bbbyvcx02a22v"]
+
+[ext_resource type="Script" uid="uid://4leioesirw62" path="res://the_roaring_knight.gd" id="1_q8eqh"]
+[ext_resource type="Texture2D" uid="uid://b6k13o5vh0xs1" path="res://Assets/TheRoaringKnight.png" id="2_kp0rm"]
+[ext_resource type="AudioStream" uid="uid://crfqv2m2ulgqv" path="res://Assets/Sounds/30. Black Knife (DELTARUNE Chapter 34 Soundtrack) - Toby Fox.mp3" id="3_qlu7v"]
+[ext_resource type="Texture2D" uid="uid://c052d3isjtync" path="res://Assets/pixil-frame-0 (28).png" id="4_7fi36"]
+[ext_resource type="Script" uid="uid://bksb0x73e4ndk" path="res://trk_slash.gd" id="4_qlu7v"]
+[ext_resource type="Script" uid="uid://bl07406be1214" path="res://star_attack.gd" id="6_716nj"]
+[ext_resource type="Texture2D" uid="uid://cw3xgxx8jq3l7" path="res://Assets/pixil-frame-0 (30).png" id="7_jl6ss"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qlu7v"]
+radius = 4.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xayt3"]
+radius = 14.0
+height = 70.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0q2yu"]
+radius = 38.0
+height = 76.0
+
+[node name="The Roaring Knight Boss" type="Node2D" unique_id=1363375402]
+
+[node name="The Roaring Knight" type="Area2D" parent="." unique_id=271685671]
+position = Vector2(1384, 348)
+scale = Vector2(7, 7)
+script = ExtResource("1_q8eqh")
+
+[node name="Music" type="AudioStreamPlayer" parent="The Roaring Knight" unique_id=47614312]
+stream = ExtResource("3_qlu7v")
+
+[node name="AudioTimer" type="Timer" parent="The Roaring Knight/Music" unique_id=145455436]
+wait_time = 117.54
+
+[node name="Sprite2D" type="Sprite2D" parent="The Roaring Knight" unique_id=984302502]
+texture_filter = 1
+texture = ExtResource("2_kp0rm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="The Roaring Knight" unique_id=936530385]
+position = Vector2(-9, 0)
+shape = SubResource("CapsuleShape2D_qlu7v")
+
+[node name="AttackTimer" type="Timer" parent="The Roaring Knight" unique_id=438818670]
+wait_time = 3.0
+
+[node name="TRKSlash" type="Area2D" parent="." unique_id=1645596256]
+position = Vector2(203, 154.00002)
+scale = Vector2(5, 5)
+script = ExtResource("4_qlu7v")
+
+[node name="Sprite2D" type="Sprite2D" parent="TRKSlash" unique_id=749955473]
+texture_filter = 1
+position = Vector2(-0.39999962, 1.7999969)
+texture = ExtResource("4_7fi36")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TRKSlash" unique_id=931269786]
+position = Vector2(1.5999999, 3.1999967)
+shape = SubResource("CapsuleShape2D_xayt3")
+
+[node name="Star Attack" type="Area2D" parent="." unique_id=1593324614]
+visible = false
+position = Vector2(1006, 310)
+script = ExtResource("6_716nj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Star Attack" unique_id=1214956328]
+texture_filter = 1
+scale = Vector2(10, 10)
+texture = ExtResource("7_jl6ss")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Star Attack" unique_id=1893511746]
+shape = SubResource("CapsuleShape2D_0q2yu")
+
+[connection signal="timeout" from="The Roaring Knight/Music/AudioTimer" to="The Roaring Knight" method="_on_audio_timer_timeout"]
+[connection signal="timeout" from="The Roaring Knight/AttackTimer" to="The Roaring Knight" method="_on_attack_timer_timeout"]
+[connection signal="area_entered" from="TRKSlash" to="TRKSlash" method="_on_area_entered"]
