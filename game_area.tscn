@@ -24,7 +24,6 @@ radius = 44.0
 height = 106.0
 
 [node name="Game Area" type="Node2D" unique_id=123038198]
-position = Vector2(0, 2)
 script = ExtResource("1_vo5ts")
 asteroidScene = ExtResource("2_twers")
 satelliteScene = ExtResource("3_4ifhc")

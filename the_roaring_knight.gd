@@ -2,12 +2,14 @@ extends Area2D
 @export var audioPlayed = 0
 @export var attack = randi_range(1, 1)
 @export var bossBattleStarted = 0
+@export var time_passed = 0
 
 func _ready() -> void:
 	position.x = 1385
 	position.y = 324
 
 func _process(delta: float) -> void:
+	time_passed += delta
 	get_parent().get_parent().get_child(3).volume_db -= 5
 	if get_parent().get_parent().get_child(3).volume_db == -80:
 		get_parent().get_parent().get_child(3).stop()
@@ -15,6 +17,7 @@ func _process(delta: float) -> void:
 		position.x -= 1000 * delta
 	else:
 		position.x = 1152
+		position.y = sin(time_passed) * 50 + 324
 		if get_parent().get_parent().bossStart == 1 && bossBattleStarted == 0:
 			print("egg2")
 			bossBattle()
