@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b2m71lxbmfq1q"]
 
 [ext_resource type="Script" uid="uid://d4fisrc36nplv" path="res://asteroid.gd" id="1_n00aa"]
-[ext_resource type="Texture2D" uid="uid://dm31bj1do8bkp" path="res://Assets/pixil-frame-0 (3).png" id="2_n00aa"]
+[ext_resource type="Texture2D" uid="uid://bvpb2l7jr2dvs" path="res://Assets/Asteroid.png" id="2_n00aa"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dl81w"]
 radius = 89.02247

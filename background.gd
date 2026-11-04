@@ -1,14 +1,16 @@
 extends Sprite2D
 
-@export var stretches = 0
+var stretches = 0
+var ending = false
 
 func _process(delta: float) -> void:
-	position.x -= 100 * delta
+	if ending == false:
+		position.x -= 100 * delta
 	if position.x <= -385:
 		stretches += 1
 		position.x = 1553
 		print(stretches)
-		if stretches >= INF && get_parent().points >= INF:
+		if stretches >= -1 && get_parent().points >= 0:
 			get_parent().bossBattle()
 
 func boomSound():

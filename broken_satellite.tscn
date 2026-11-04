@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://lc1tbvomseb1"]
 
 [ext_resource type="Script" uid="uid://band6cm0wpyy4" path="res://broken_satellite.gd" id="1_irlbt"]
-[ext_resource type="Texture2D" uid="uid://c3r4fuaqyoadt" path="res://Assets/pixil-frame-0 (23).png" id="1_qxhs8"]
+[ext_resource type="Texture2D" uid="uid://7kdja0bcdull" path="res://Assets/Broken_Satellite.png" id="2_irlbt"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_irlbt"]
 radius = 10.760168
@@ -13,7 +13,7 @@ script = ExtResource("1_irlbt")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1848283667]
 texture_filter = 1
 scale = Vector2(5, 5)
-texture = ExtResource("1_qxhs8")
+texture = ExtResource("2_irlbt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=168882778]
 position = Vector2(1, 3.7252903e-08)

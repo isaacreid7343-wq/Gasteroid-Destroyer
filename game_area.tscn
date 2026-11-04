@@ -6,18 +6,105 @@
 [ext_resource type="PackedScene" uid="uid://lc1tbvomseb1" path="res://broken_satellite.tscn" id="4_tkan5"]
 [ext_resource type="PackedScene" uid="uid://etom1edy2il8" path="res://moon_rock.tscn" id="5_8mpgn"]
 [ext_resource type="PackedScene" uid="uid://bbbyvcx02a22v" path="res://the_roaring_knight_boss.tscn" id="6_vo5ts"]
-[ext_resource type="Texture2D" uid="uid://bjakqir7wphp8" path="res://Assets/pixil-frame-0 (8).png" id="7_pmdf5"]
+[ext_resource type="Texture2D" uid="uid://co8krov2kn7hj" path="res://Assets/Star Background.png" id="7_61s0r"]
 [ext_resource type="Script" uid="uid://chldoo0wih4x4" path="res://background.gd" id="8_hfa6h"]
 [ext_resource type="Script" uid="uid://ctddouvvky8au" path="res://Player.gd" id="9_k8014"]
 [ext_resource type="PackedScene" uid="uid://7l58r2jblbae" path="res://Bullet.tscn" id="10_8atkb"]
-[ext_resource type="Texture2D" uid="uid://dwoh4e387hjtg" path="res://Assets/pixil-frame-0 (10).png" id="11_7pd1o"]
 [ext_resource type="AudioStream" uid="uid://bhqfevpu21bee" path="res://Assets/Sounds/deltarune-explosion-sound-effect.mp3" id="11_twers"]
-[ext_resource type="Texture2D" uid="uid://beaq1hnpv20jl" path="res://Assets/pixil-frame-0 (9).png" id="12_ydyo8"]
-[ext_resource type="Texture2D" uid="uid://cae0rpkq13sma" path="res://Assets/pixil-frame-0 (7).png" id="13_vo5ts"]
+[ext_resource type="Texture2D" uid="uid://dhvxqtsd3p5q5" path="res://Assets/3rd_Level_Ship.ng1.png" id="12_30ex0"]
+[ext_resource type="Texture2D" uid="uid://dog1ciwwqdmq1" path="res://Assets/1st_Level_Ship1.png" id="12_pmdf5"]
+[ext_resource type="Texture2D" uid="uid://l4jvw31p0ryx" path="res://Assets/3rd_Level_Ship.ng2.png" id="13_a42sd"]
+[ext_resource type="Texture2D" uid="uid://6fq8fctoiqh7" path="res://Assets/1st_Level_Ship2.png" id="13_hfa6h"]
+[ext_resource type="Texture2D" uid="uid://rjktyqbacoee" path="res://Assets/3rd_Level_Ship.ng3.png" id="14_g7ptw"]
+[ext_resource type="Texture2D" uid="uid://df3i8nsa4ccj6" path="res://Assets/1st_Level_Ship3.png" id="14_k8014"]
 [ext_resource type="Texture2D" uid="uid://j4mnt2rbru5i" path="res://Assets/pixil-frame-0 (5).png" id="14_vo5ts"]
 [ext_resource type="AudioStream" uid="uid://beqi1n7vjrauq" path="res://Assets/Sounds/spamton_neo_mix_ex_wip.ogg" id="15_4ifhc"]
+[ext_resource type="Texture2D" uid="uid://ccn7cjd2euto3" path="res://Assets/1st_Level_Ship4.png" id="15_8atkb"]
+[ext_resource type="Texture2D" uid="uid://fxoh6k1taf4e" path="res://Assets/3rd_Level_Ship.ng4.png" id="15_cybnn"]
 [ext_resource type="Texture2D" uid="uid://7trbjdcn0v80" path="res://Assets/pixil-frame-0 (4).png" id="15_twers"]
+[ext_resource type="Texture2D" uid="uid://cxdyidkoy7bhm" path="res://Assets/3rd_Level_Ship.ng5.png" id="16_dntai"]
 [ext_resource type="FontFile" uid="uid://ddykhpydupbc6" path="res://Assets/Fonts/Minecraft.ttf" id="16_qcpok"]
+[ext_resource type="Texture2D" uid="uid://1372pe83uj6w" path="res://Assets/1st_Level_Ship5.png" id="16_xbol2"]
+[ext_resource type="Texture2D" uid="uid://cqnhb4sakon08" path="res://Assets/1st_Level_Ship6.png" id="17_8yxmt"]
+[ext_resource type="Texture2D" uid="uid://dm1a23y3nyjhd" path="res://Assets/3rd_Level_Ship.ng6.png" id="17_rul0p"]
+[ext_resource type="Texture2D" uid="uid://cgkulychqbgwt" path="res://Assets/2nd_Level_Ship1.png" id="18_utp2y"]
+[ext_resource type="Texture2D" uid="uid://kwefusooa1ye" path="res://Assets/2nd_Level_Ship2.png" id="19_ehfge"]
+[ext_resource type="Texture2D" uid="uid://d4foceyws6ktg" path="res://Assets/2nd_Level_Ship3.png" id="20_t7mre"]
+[ext_resource type="Texture2D" uid="uid://w6ixh3d7p5u2" path="res://Assets/2nd_Level_Ship4.png" id="21_1ipqc"]
+[ext_resource type="Texture2D" uid="uid://d2l1j0iahdkpv" path="res://Assets/2nd_Level_Ship5.png" id="22_2vcc3"]
+[ext_resource type="Texture2D" uid="uid://d3ldwdm0h20e4" path="res://Assets/2nd_Level_Ship6.png" id="23_ealag"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ksya"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_30ex0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_a42sd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g7ptw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_cybnn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_dntai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_rul0p")
+}],
+"loop": 1,
+"name": &"1 Health",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_utp2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ehfge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_t7mre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1ipqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_2vcc3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ealag")
+}],
+"loop": 1,
+"name": &"2 Health",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_pmdf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hfa6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_k8014")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_8atkb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_xbol2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_8yxmt")
+}],
+"loop": 1,
+"name": &"3 Health",
+"speed": 5.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0hol4"]
 radius = 44.0
@@ -33,9 +120,9 @@ bossSceneNo1 = ExtResource("6_vo5ts")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1342693481]
 texture_filter = 1
-position = Vector2(1553, 320.99997)
+position = Vector2(1553, 322)
 scale = Vector2(10.124999, 10.124999)
-texture = ExtResource("7_pmdf5")
+texture = ExtResource("7_61s0r")
 script = ExtResource("8_hfa6h")
 
 [node name="BoomSound" type="AudioStreamPlayer" parent="Background" unique_id=265142372]
@@ -47,28 +134,21 @@ position = Vector2(211, 300)
 script = ExtResource("9_k8014")
 bulletScene = ExtResource("10_8atkb")
 
-[node name="Player Full Health" type="Sprite2D" parent="Player" unique_id=1588637638]
+[node name="Player Sprite" type="AnimatedSprite2D" parent="Player" unique_id=528956980]
 texture_filter = 1
-scale = Vector2(5, 5)
-texture = ExtResource("13_vo5ts")
-
-[node name="Player 2 Health" type="Sprite2D" parent="Player" unique_id=1935771771]
-visible = false
-texture_filter = 1
-scale = Vector2(5, 5)
-texture = ExtResource("12_ydyo8")
-
-[node name="Player 1 Health" type="Sprite2D" parent="Player" unique_id=1618459442]
-visible = false
-texture_filter = 1
-scale = Vector2(5, 5)
-texture = ExtResource("11_7pd1o")
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_7ksya")
+animation = &"1 Health"
 
 [node name="Player" type="Area2D" parent="Player" unique_id=1064565964]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Player" unique_id=1268731679]
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_0hol4")
+
+[node name="Timer" type="Timer" parent="Player" unique_id=1267173635]
+wait_time = 0.5
+one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1998053375]
 position = Vector2(574, 322)
@@ -128,4 +208,5 @@ theme_override_fonts/font = ExtResource("16_qcpok")
 theme_override_font_sizes/font_size = 20
 horizontal_alignment = 2
 
+[connection signal="timeout" from="Player/Timer" to="Player" method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

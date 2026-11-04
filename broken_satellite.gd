@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var shot = 0
+var shot = 0
 
 func _process(delta: float) -> void:
 	position.x -= 400 * delta

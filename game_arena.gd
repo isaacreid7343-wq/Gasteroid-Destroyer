@@ -5,10 +5,10 @@ extends Node2D
 @export var brokenSatelliteScene: PackedScene
 @export var moonRockScene: PackedScene
 @export var bossSceneNo1: PackedScene
-@export var turn = 1
-@export var points = 0
-@export var pointLives = 0
-@export var bossStart = 0
+var turn = 1
+var points = 0
+var pointLives = 0
+var bossStart = 0
 
 func _ready() -> void:
 	point_counter.text = str(0)
@@ -31,6 +31,21 @@ func _process(_delta: float) -> void:
 		pointLives += 1
 		get_child(1).damage(-1)
 	elif points >= 5000 && pointLives == 4:
+		pointLives += 1
+		get_child(1).damage(-1)
+	elif points >= 6000 && pointLives == 5:
+		pointLives += 1
+		get_child(1).damage(-1)
+	elif points >= 7000 && pointLives == 6:
+		pointLives += 1
+		get_child(1).damage(-1)
+	elif points >= 8000 && pointLives == 7:
+		pointLives += 1
+		get_child(1).damage(-1)
+	elif points >= 9000 && pointLives == 8:
+		pointLives += 1
+		get_child(1).damage(-1)
+	elif points >= 10000 && pointLives == 9:
 		pointLives += 1
 		get_child(1).damage(-1)
 

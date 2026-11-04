@@ -1,5 +1,5 @@
 extends Area2D
-@export var shot = false
+var shot = false
 
 func _process(delta: float) -> void:
 	if shot == false:

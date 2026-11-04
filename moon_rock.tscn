@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://etom1edy2il8"]
 
 [ext_resource type="Script" uid="uid://ha2ei3nllhag" path="res://moon_rock.gd" id="1_x8y0b"]
-[ext_resource type="Texture2D" uid="uid://s7apg7l20ojy" path="res://Assets/pixil-frame-0 (19).png" id="2_x8y0b"]
+[ext_resource type="Texture2D" uid="uid://brntlkucjeyjt" path="res://Assets/Moon Rock.png" id="2_x8y0b"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x8y0b"]
 radius = 80.024994

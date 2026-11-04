@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://3bmani0uu35m"]
 
 [ext_resource type="Script" uid="uid://d4fo6h74okhww" path="res://satellite.gd" id="1_u2kwt"]
-[ext_resource type="Texture2D" uid="uid://dra584764xpcv" path="res://Assets/pixil-frame-0 (11).png" id="2_47pra"]
+[ext_resource type="Texture2D" uid="uid://ckuiofg8amj3r" path="res://Assets/Satellite.png" id="2_47pra"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_47pra"]
 radius = 50.69501
