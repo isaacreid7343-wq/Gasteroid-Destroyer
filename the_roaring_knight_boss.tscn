@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://4leioesirw62" path="res://the_roaring_knight.gd" id="1_q8eqh"]
 [ext_resource type="Texture2D" uid="uid://b6k13o5vh0xs1" path="res://Assets/TheRoaringKnight.png" id="2_kp0rm"]
 [ext_resource type="AudioStream" uid="uid://crfqv2m2ulgqv" path="res://Assets/Sounds/30. Black Knife (DELTARUNE Chapter 34 Soundtrack) - Toby Fox.mp3" id="3_qlu7v"]
-[ext_resource type="Texture2D" uid="uid://c052d3isjtync" path="res://Assets/pixil-frame-0 (28).png" id="4_7fi36"]
 [ext_resource type="Script" uid="uid://bksb0x73e4ndk" path="res://trk_slash.gd" id="4_qlu7v"]
+[ext_resource type="Texture2D" uid="uid://3d2y0fw5qgcc" path="res://Assets/THRRNGKNGHTSLSH.png" id="5_0q2yu"]
 [ext_resource type="Script" uid="uid://bl07406be1214" path="res://star_attack_1.gd" id="6_716nj"]
-[ext_resource type="Texture2D" uid="uid://cw3xgxx8jq3l7" path="res://Assets/pixil-frame-0 (30).png" id="7_jl6ss"]
+[ext_resource type="Texture2D" uid="uid://olo4n26ol866" path="res://Assets/Star Attack.png" id="7_b837m"]
 [ext_resource type="Script" uid="uid://da0da7s8vjhug" path="res://star_attack_2.gd" id="8_0q2yu"]
 [ext_resource type="Script" uid="uid://7p48ba08knbj" path="res://star_attack_3.gd" id="9_b837m"]
 
@@ -53,7 +53,7 @@ script = ExtResource("4_qlu7v")
 [node name="Sprite2D" type="Sprite2D" parent="TRKSlash" unique_id=749955473]
 texture_filter = 1
 position = Vector2(-0.39999962, 1.7999969)
-texture = ExtResource("4_7fi36")
+texture = ExtResource("5_0q2yu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TRKSlash" unique_id=931269786]
 position = Vector2(1.5999999, 3.1999967)
@@ -70,7 +70,7 @@ script = ExtResource("6_716nj")
 [node name="Sprite2D" type="Sprite2D" parent="Star Attack 1/Star Attack" unique_id=1214956328]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("7_jl6ss")
+texture = ExtResource("7_b837m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star Attack 1/Star Attack" unique_id=1893511746]
 shape = SubResource("CapsuleShape2D_0q2yu")
@@ -86,7 +86,7 @@ script = ExtResource("8_0q2yu")
 [node name="Sprite2D" type="Sprite2D" parent="Star Attack 2/Star Attack" unique_id=2089637905]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("7_jl6ss")
+texture = ExtResource("7_b837m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star Attack 2/Star Attack" unique_id=1919207646]
 shape = SubResource("CapsuleShape2D_0q2yu")
@@ -102,7 +102,7 @@ script = ExtResource("9_b837m")
 [node name="Sprite2D" type="Sprite2D" parent="Star Attack 3/Star Attack" unique_id=2049837119]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("7_jl6ss")
+texture = ExtResource("7_b837m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star Attack 3/Star Attack" unique_id=33747593]
 shape = SubResource("CapsuleShape2D_0q2yu")
@@ -118,7 +118,7 @@ script = ExtResource("9_b837m")
 [node name="Sprite2D" type="Sprite2D" parent="Star Attack 4/Star Attack" unique_id=2013711402]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("7_jl6ss")
+texture = ExtResource("7_b837m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star Attack 4/Star Attack" unique_id=1095096001]
 shape = SubResource("CapsuleShape2D_0q2yu")
@@ -134,7 +134,7 @@ script = ExtResource("9_b837m")
 [node name="Sprite2D" type="Sprite2D" parent="Star Attack 5/Star Attack" unique_id=2006121089]
 texture_filter = 1
 scale = Vector2(10, 10)
-texture = ExtResource("7_jl6ss")
+texture = ExtResource("7_b837m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Star Attack 5/Star Attack" unique_id=2137022828]
 shape = SubResource("CapsuleShape2D_0q2yu")

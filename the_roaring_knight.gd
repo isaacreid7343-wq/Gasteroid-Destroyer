@@ -3,7 +3,7 @@ var audioPlayed = 0
 var attack = randi_range(1, 1)
 var bossBattleStarted = 0
 var time_passed = 0
-var health = 3
+var health = 300
 
 func _ready() -> void:
 	position.x = 1385

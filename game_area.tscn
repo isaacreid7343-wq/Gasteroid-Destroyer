@@ -17,11 +17,9 @@
 [ext_resource type="Texture2D" uid="uid://6fq8fctoiqh7" path="res://Assets/1st_Level_Ship2.png" id="13_hfa6h"]
 [ext_resource type="Texture2D" uid="uid://rjktyqbacoee" path="res://Assets/3rd_Level_Ship.ng3.png" id="14_g7ptw"]
 [ext_resource type="Texture2D" uid="uid://df3i8nsa4ccj6" path="res://Assets/1st_Level_Ship3.png" id="14_k8014"]
-[ext_resource type="Texture2D" uid="uid://j4mnt2rbru5i" path="res://Assets/pixil-frame-0 (5).png" id="14_vo5ts"]
 [ext_resource type="AudioStream" uid="uid://beqi1n7vjrauq" path="res://Assets/Sounds/spamton_neo_mix_ex_wip.ogg" id="15_4ifhc"]
 [ext_resource type="Texture2D" uid="uid://ccn7cjd2euto3" path="res://Assets/1st_Level_Ship4.png" id="15_8atkb"]
 [ext_resource type="Texture2D" uid="uid://fxoh6k1taf4e" path="res://Assets/3rd_Level_Ship.ng4.png" id="15_cybnn"]
-[ext_resource type="Texture2D" uid="uid://7trbjdcn0v80" path="res://Assets/pixil-frame-0 (4).png" id="15_twers"]
 [ext_resource type="Texture2D" uid="uid://cxdyidkoy7bhm" path="res://Assets/3rd_Level_Ship.ng5.png" id="16_dntai"]
 [ext_resource type="FontFile" uid="uid://ddykhpydupbc6" path="res://Assets/Fonts/Minecraft.ttf" id="16_qcpok"]
 [ext_resource type="Texture2D" uid="uid://1372pe83uj6w" path="res://Assets/1st_Level_Ship5.png" id="16_xbol2"]
@@ -33,6 +31,8 @@
 [ext_resource type="Texture2D" uid="uid://w6ixh3d7p5u2" path="res://Assets/2nd_Level_Ship4.png" id="21_1ipqc"]
 [ext_resource type="Texture2D" uid="uid://d2l1j0iahdkpv" path="res://Assets/2nd_Level_Ship5.png" id="22_2vcc3"]
 [ext_resource type="Texture2D" uid="uid://d3ldwdm0h20e4" path="res://Assets/2nd_Level_Ship6.png" id="23_ealag"]
+[ext_resource type="Texture2D" uid="uid://cffpjqqve3npe" path="res://Assets/Empty Heart.png" id="31_61s0r"]
+[ext_resource type="Texture2D" uid="uid://dsvdoriwhbs3n" path="res://Assets/Full Heart.png" id="32_30ex0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7ksya"]
 animations = [{
@@ -166,37 +166,37 @@ autostart = true
 texture_filter = 1
 position = Vector2(25, 27)
 scale = Vector2(10, 10)
-texture = ExtResource("14_vo5ts")
+texture = ExtResource("31_61s0r")
 
 [node name="Empty Heart 2" type="Sprite2D" parent="." unique_id=18659572]
 texture_filter = 1
 position = Vector2(65, 27)
 scale = Vector2(10, 10)
-texture = ExtResource("14_vo5ts")
+texture = ExtResource("31_61s0r")
 
 [node name="Empty Heart 3" type="Sprite2D" parent="." unique_id=727876615]
 texture_filter = 1
 position = Vector2(105, 27)
 scale = Vector2(10, 10)
-texture = ExtResource("14_vo5ts")
+texture = ExtResource("31_61s0r")
 
 [node name="Full Heart 1" type="Sprite2D" parent="." unique_id=612284739]
 texture_filter = 1
 position = Vector2(25, 27)
 scale = Vector2(10, 10)
-texture = ExtResource("15_twers")
+texture = ExtResource("32_30ex0")
 
 [node name="Full Heart 2" type="Sprite2D" parent="." unique_id=820196065]
 texture_filter = 1
 position = Vector2(65, 27)
 scale = Vector2(10, 10)
-texture = ExtResource("15_twers")
+texture = ExtResource("32_30ex0")
 
 [node name="Full Heart 3" type="Sprite2D" parent="." unique_id=964253862]
 texture_filter = 1
 position = Vector2(105, 27)
 scale = Vector2(10, 10)
-texture = ExtResource("15_twers")
+texture = ExtResource("32_30ex0")
 
 [node name="Point Counter" type="Label" parent="." unique_id=1987618221]
 offset_left = 1036.0

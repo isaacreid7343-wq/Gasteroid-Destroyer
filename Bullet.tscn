@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://7l58r2jblbae"]
 
-[ext_resource type="Texture2D" uid="uid://bj7k5xebebgmw" path="res://Assets/pixil-frame-0.png" id="1_v7oki"]
 [ext_resource type="Script" uid="uid://e16m4yhwxslq" path="res://bullet.gd" id="1_v8qja"]
 [ext_resource type="AudioStream" uid="uid://bhqfevpu21bee" path="res://Assets/Sounds/deltarune-explosion-sound-effect.mp3" id="2_7281b"]
+[ext_resource type="Texture2D" uid="uid://cg28mceikffga" path="res://Assets/Bullet.png" id="3_7281b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v8qja"]
 size = Vector2(20, 10)
@@ -21,6 +21,6 @@ shape = SubResource("RectangleShape2D_v8qja")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1960599828]
 scale = Vector2(10, 10)
-texture = ExtResource("1_v7oki")
+texture = ExtResource("3_7281b")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
